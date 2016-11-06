@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Rails Amusement Park
 
 ## Objectives
@@ -34,7 +33,3 @@ You're going to be building an amusement park. There will be users, attractions,
 
 
 <a href='https://learn.co/lessons/rails-amusement-park' data-visibility='hidden'>View this lesson on Learn.co</a>
-=======
-# rails-modular_test
-Testing functions w rails-amusement-park-v-000 app
->>>>>>> f5c0ef93d20108b2035c0fc7a71ad0cff42899b1

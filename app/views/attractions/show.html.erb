@@ -1,0 +1,19 @@
+
+    <p><strong>Name: NAME</strong> <%= @attraction.name %></p>
+
+    <% if current_user.admin %>
+      <%= link_to 'Edit Attraction', edit_attraction_path(@attraction) %></p>
+      <%= link_to 'New Attraction', new_attraction_path(@attraction) %></p>
+      <%= button_to "Go on this ride", rides_new_path, params: {:user_id => current_user.id, :attraction_id => @attraction.id} %>
+    <% else %>
+    <h1><%= @attraction.name %></h1>
+    <!-- raise user_path.inspect -->
+    <%= button_to "Go on this ride", rides_new_path, params: {:user_id => current_user.id, :attraction_id => @attraction.id} %>
+
+
+
+    <% end %>
+
+    <%= link_to 'Back', attractions_path %></p>
+  </div>
+</div>

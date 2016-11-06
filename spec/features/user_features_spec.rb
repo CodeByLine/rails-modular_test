@@ -1,4 +1,5 @@
 require_relative "../rails_helper.rb"
+require 'pry'
 
 describe 'Feature Test: User Signup', :type => :feature do
 
@@ -202,6 +203,7 @@ describe 'Feature Test: Go on a Ride', :type => :feature do
     click_link('See attractions')
     click_link("Go on #{@ferriswheel.name}")
     expect(current_path).to eq("/attractions/2")
+    # binding.pry
     expect(page).to have_button("Go on this ride")
   end
 

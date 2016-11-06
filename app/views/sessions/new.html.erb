@@ -1,0 +1,17 @@
+<%= form_for(:user) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, "Enter your password" %><br>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign In"  %>
+  </div>
+<% end %>
+<p>New user? <%= link_to "Sign Up now!", new_user_path %></p>
